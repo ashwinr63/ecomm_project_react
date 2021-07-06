@@ -9,7 +9,7 @@ const SearchFor = ({results}) => {
             {ProductArray}
 
             <p id="product_numbers">
-                {ProductArray.length}{(ProductArray.length === 1) ? `products` : `product`} of {result.length}
+                {ProductArray.length}{(ProductArray.length === 1) ? `products` : `product`} of {results.length}
             </p>
         </div>
     )
