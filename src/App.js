@@ -1,6 +1,5 @@
 import React from 'react'
-import Products from 'pages/Products' 
-import ProductList from './components/ProductList';
+import Product from 'pages/Product'
 const App = () => {
 	const products =[
 		{
@@ -66,7 +65,7 @@ const App = () => {
 	];
 
 	return (
-	<ProductList data = {products}/>
+	<Products data = {products}/>
 	)
 }
 
