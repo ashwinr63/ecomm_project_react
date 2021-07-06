@@ -24,6 +24,17 @@ const Product = ({data}) => {
     .filter(({prod_price}) => prod_price >= minPrice)
     .filter(({prod_name}) => prod_name.toUpperCase().includes(query.toUpperCase())).sort(sort)
 
+    const handleQuery = (event) => {
+        //setQuery(event.target.value)
+    
+        setSearchState({
+          ...searchState,
+          query: event.target.value
+        })
+
+        //for Sorting operation
+      }
+    
 
 }
 
