@@ -8,7 +8,7 @@ const Layout = ({children}) => {
         <div className="layout">
         <Header/>
 
-        <main className="products">
+        <main class="products">
         <section class="results">
         {children}
         </section>
@@ -19,3 +19,4 @@ const Layout = ({children}) => {
     )
 }
 
+export default Layout

@@ -28,7 +28,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="search-product"/>
-      {/* <!-- Search for a product (non-functional) --> */}
+      {/* <!-- Search htmlFor a product (non-functional) --> */}
       <form className="search">
         <label>
           <input type="search" name="find" id="find" placeholder="Find"/>
