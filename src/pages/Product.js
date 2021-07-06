@@ -37,11 +37,11 @@ const Product = ({data}) => {
 
         const handleSort = ({target}) => {
 
-            let sort
+            let sorting
             if (target.value === "0") {
-              sort = (max, min) => max.prod_price - min.prod_price
+              sorting = (max, min) => max.prod_price - min.prod_price
             } else if (target.value === "1") {
-              sort = (max, min) => min.prod_price - max.prod_price
+              sorting = (max, min) => min.prod_price - max.prod_price
             }
         
             setSearchState({
@@ -50,7 +50,6 @@ const Product = ({data}) => {
             })
           }
       
-
 
     return (
         <Layout>

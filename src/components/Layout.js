@@ -8,8 +8,8 @@ const Layout = ({children}) => {
         <div className="layout">
         <Header/>
 
-        <main class="products">
-        <section class="results">
+        <main className="products">
+        <section className="results">
         {children}
         </section>
         </main>

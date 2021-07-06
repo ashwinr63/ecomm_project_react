@@ -14,7 +14,7 @@ const ProductList = ({data}) => {
             <data value="39"><del>${prod_price}</del> <ins>${prod_price}</ins></data>
         </header>
         <footer>
-        <button type="button" class="add-cart"><span class="material-icons"></span>Add to Cart</button>
+        <button type="button" className="add-cart"><span className="material-icons"></span>Add to Cart</button>
         </footer>   
         </article>
     )
