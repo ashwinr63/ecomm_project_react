@@ -5,7 +5,7 @@ const Filter =() => {
         <div className='filter-main'>
             <h2>Filters</h2>
             <button type="button" class="filter-button">
-            <img src="./img/filter_list_black_24dp.svg" alt="filter-list"/>
+            <img src={"./img/filter_list_black_24dp.svg"} alt="filter-list"/>
             </button>
 
             <fieldset class="color">

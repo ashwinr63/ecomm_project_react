@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from 'pages/Product'
+import Product from './pages/Product'
 const App = () => {
 	const products =[
 		{
@@ -65,7 +65,7 @@ const App = () => {
 	];
 
 	return (
-	<Products data = {products}/>
+	<Product data = {products}/>
 	)
 }
 

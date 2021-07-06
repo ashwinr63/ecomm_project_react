@@ -6,13 +6,13 @@ const Header = () => {
       <>
       <header className="page-header">
       <div className="logo">
-        <a href="#" className="logo"><img src="./img/Asset 1.png" alt="logo" /></a>
+        <a href="#" className="logo"><img src={"./img/Asset_1.png"} alt="logo" /></a>
         {/* <!-- Site logo --></a> */}
       </div>
       {/* <!-- Navigation menu and toggle button (non-functional) --> */}
      
         <button type="button" className="nav-toggle active">
-          <img src="./img/menu_black_24dp.svg" alt="menu-bar"/></button>
+          <img src={"./img/menu_black_24dp.svg"} alt="menu-bar"/></button>
       {/* <!-- Navigation Menu --> */}
       <nav aria-label="Primary" className="navigation">
         <ul className="menu">
@@ -33,7 +33,7 @@ const Header = () => {
         <label>
           <input type="search" name="find" id="find" placeholder="Find"/>
         </label>
-        <button type="button" img src="./img/search_black_24dp.svg" alt="search-outline" />
+        <button type="button" img src={"./img/search_black_24dp.svg"} alt="search-outline" />
       </form>
         {/* <!-- Additional links --> */}
         <ul className="your-products">
