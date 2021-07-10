@@ -1,11 +1,11 @@
 import React from 'react'
-
+import filterlist from '../img/filter_list_black_24dp.svg'
 const Filter =() => {
     return (
         <div className='filter-main'>
             <h2>Filters</h2>
             <button type="button" className="filter-button">
-            <img src={"./img/filter_list_black_24dp.svg"} alt="filter-list"/>
+            <img src={filterlist} alt="filter-list"/>
             </button>
 
             <fieldset className="color">

@@ -2,7 +2,7 @@ import React from 'react'
 import ProductList from './ProductList'
 
 const SearchFor = ({result}) => {
-    const ProductArray = result.slice(0,3).map((products) => <ProductList key={products.prod_name} data={products} />)
+    const ProductArray = result.slice(0,20).map((products) => <ProductList key={products.prod_name} data={products} />)
 
     return (
 
