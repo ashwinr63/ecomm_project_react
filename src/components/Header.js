@@ -1,12 +1,12 @@
 import React from 'react'
-
+import logo from '../img/Asset_1.png'
 
 const Header = () => {
     return (
       <>
       <header className="page-header">
       <div className="logo">
-        <a href="#" className="logo"><img src={"./img/Asset_1.png"} alt="logo" /></a>
+        <a href="#" className="logo"><img src={logo} alt="logo" /></a>
         {/* <!-- Site logo --></a> */}
       </div>
       {/* <!-- Navigation menu and toggle button (non-functional) --> */}

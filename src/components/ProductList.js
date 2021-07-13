@@ -3,8 +3,8 @@ const ProductList = ({data}) => {
 
     const {prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color} = data
         
-    const [img, setImg] =useState(``)
-    import (`img/${prod_img}`).then((image) => setImg(image.default))
+    const [image, setImg] =useState(``)
+    import (`../img/${prod_img}`).then((image) => setImg(image.default))
     return (
                 <article className="product">
                 <header>
@@ -19,7 +19,7 @@ const ProductList = ({data}) => {
                 <dd>{prod_rate}</dd>
                 </dl>  
                 </header>
-            <form className="product-filter">
+              <form className="product-filter">
                 <fieldset className="field-list">
                     <legend>Colours</legend>
                     <ul>

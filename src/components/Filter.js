@@ -1,11 +1,13 @@
-import React from 'react'
-import filterlist from '../img/filter_list_black_24dp.svg'
+import React, {useState} from 'react'
+import FilterListIcon from '@material-ui/icons/FilterList'
+
+
 const Filter =() => {
     return (
         <div className='filter-main'>
             <h2>Filters</h2>
             <button type="button" className="filter-button">
-            <img src={filterlist} alt="filter-list"/>
+            <img src={FilterListIcon} alt="filter-list"/>
             </button>
 
             <fieldset className="color">
