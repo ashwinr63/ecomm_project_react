@@ -5,7 +5,7 @@ const App = () => {
 	const products = [
 		{
 			"prod_name": "Prod1",
-			"prod_img": "Honda_Civic_1.jpg",
+			"prod_img": "Honda_Civic.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -16,7 +16,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod2",
-			"prod_img": "Mazda_CX-30.jpg",
+			"prod_img": "Mazda_CX.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -27,7 +27,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod3",
-			"prod_img": "Toyota Camry.jpg",
+			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -38,7 +38,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod4",
-			"prod_img": "Toyota Camry.jpg",
+			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -49,7 +49,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod5",
-			"prod_img": "Toyota_Rav4.jpg",
+			"prod_img": "Toyota_Rav.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -60,7 +60,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod6",
-			"prod_img": "Toyota_Acura_1.jpg",
+			"prod_img": "Toyota_Acura.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -71,7 +71,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod7",
-			"prod_img": "Honda_Civic_1.jpg",
+			"prod_img": "Honda_Civic.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -82,7 +82,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod8",
-			"prod_img": "Mazda_CX-30.jpg",
+			"prod_img": "Mazda_CX.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -93,7 +93,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod9",
-			"prod_img": "Toyota Camry.jpg",
+			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -104,7 +104,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod10",
-			"prod_img": "Toyota Camry.jpg",
+			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -115,7 +115,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod11",
-			"prod_img": "Toyota_Rav4.jpg",
+			"prod_img": "Toyota_Rav.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -126,7 +126,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod12",
-			"prod_img": "Toyota_Acura_1.jpg",
+			"prod_img": "Toyota_Acura.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -137,7 +137,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod13",
-			"prod_img": "Honda_Civic_1.jpg",
+			"prod_img": "Honda_Civic.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
 			"old_price": 50,
@@ -148,7 +148,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod14",
-			"prod_img": "Mazda_CX-30.jpg",
+			"prod_img": "Mazda_CX.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 21,
@@ -158,7 +158,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod15",
-			"prod_img": "Toyota Camry.jpg",
+			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 22,
@@ -168,7 +168,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod16",
-			"prod_img": "Toyota Camry.jpg",
+			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 1025,
@@ -178,7 +178,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod17",
-			"prod_img": "Toyota_Rav4.jpg",
+			"prod_img": "Toyota_Rav.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 20,
@@ -188,7 +188,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod18",
-			"prod_img": "Toyota_Acura_1.jpg",
+			"prod_img": "Toyota_Acura.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 29,
@@ -198,7 +198,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod19",
-			"prod_img": "Toyota_Rav4.jpg",
+			"prod_img": "Toyota_Rav.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 20,
@@ -208,7 +208,7 @@ const App = () => {
 		},
 		{
 			"prod_name": "Prod20",
-			"prod_img": "Toyota_Acura_1.jpg",
+			"prod_img": "Toyota_Acura.jpg",
 			"prod_link": "product.html",
 			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
 			"prod_price": 29,
