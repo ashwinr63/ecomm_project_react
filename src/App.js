@@ -4,6 +4,8 @@ import Product from 'pages/Product';
 import SingleProductPage from 'pages/SingleProductPage';
 import ProdContext from 'contexts/ProdContext';
 import cartContext from 'contexts/cartContext';
+import cartPage from 'pages/cartPage'
+import CartPage from './pages/cartPage';
 
 
 const App = () => {
