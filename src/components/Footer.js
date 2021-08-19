@@ -2,7 +2,6 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <>
         <footer className="page-footer">
         <div>
         <ul className="social">
@@ -20,7 +19,6 @@ const Footer = () => {
       <p>Copyright {(new Date()).getFullYear()}<sup>&copy;</sup></p>
         </div>  
         </footer>
-        </>
     )
 }
 

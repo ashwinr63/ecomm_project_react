@@ -1,12 +1,14 @@
 import React from 'react'
-import logo from '../img/Asset_1.png'
+import logo from '../img/Logo.png'
+import Image from 'components/Image'
+import {FavoriteBorderIcon} from '@material-ui/icons/'
 
 const Header = () => {
     return (
       <>
       <header className="page-header">
       <div className="logo">
-        <a href="#" className="logo"><img src={logo} alt="logo" /></a>
+        <a href="#" className="logo"><Image src={logo} alt={Local} /></a>
         {/* <!-- Site logo --></a> */}
       </div>
       {/* <!-- Navigation menu and toggle button (non-functional) --> */}
@@ -37,7 +39,7 @@ const Header = () => {
       </form>
         {/* <!-- Additional links --> */}
         <ul className="your-products">
-          <li><a href="#"><span className="material-icons" aria-label="Favourites" id='favourites'>favorite_border</span></a></li>
+          <li><a href="#"><span className="material-icons" aria-label="Favourites" id='favourites'><FavoriteBorderIcon /></span></a></li>
         <li><a href="#"><span className="material-icons" aria-label="Items in your cart" id='items'>shopping_cart</span></a></li>
         <li><a href="#"><span className="material-icons" aria-label="user account" id="account">account_circle</span></a></li>
         </ul>

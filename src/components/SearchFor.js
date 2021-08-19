@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductList from './ProductList'
+import ProductList from 'components/ProductList'
 
 const SearchFor = ({result}) => {
     const ProductArray = result.slice(0,20).map((products) => <ProductList key={products.prod_name} data={products} />)

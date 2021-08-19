@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import Layout from '../components/Layout'
-import Filter from '../components/Filter'
-import SearchFor from '../components/SearchFor'
+import Layout from 'components/Layout'
+import SearchFor from 'components/SearchFor'
 import filterlogo from '../img/filter_list_black_24dp.svg'
+import Image from 'components/Image'
 
 const Product = ({data}) => {
 
@@ -54,9 +54,7 @@ const Product = ({data}) => {
     return (
         <Layout>
 
-         <div className='filter-main'>
-            <h2>Filters</h2>
-            <div className="search-div">
+          <h2>Filters</h2>
           <fieldset className="search">
             <input type="search" name="search" id="filterResults" autoComplete="off" onChange={handleQuery} value={query}/>
           </fieldset>
@@ -72,9 +70,8 @@ const Product = ({data}) => {
           <input type="range" name="price" id="filterPrice" value={minPrice} min="0" max="30" step="0.1" onChange={handlePrice}/>
           <output htmlFor="filterPrice">{minPrice.toFixed(1)}</output>
         </fieldset>
-        </div>
             <button type="button" className="filter-button">
-            <img src={filterlogo} alt="filter-list"/>
+            <Image src={filterlogo}/>
             </button>
 
             <fieldset className="color">
@@ -126,8 +123,7 @@ const Product = ({data}) => {
               </li>
             </ol>
           </fieldset>
-        </div>
-        <SearchFor result={searchResult}/>
+        <SearchFor result={searchResult} />
         </Layout>
     )
 

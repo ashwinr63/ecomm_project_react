@@ -1,15 +1,19 @@
 import React, {useState} from 'react'
+import Image from 'components/Image'
+import {Link} from 'react-router-dom'
 const ProductList = ({data}) => {
 
     const {prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color} = data
         
-    const [image, setImg] =useState(``)
-    import (`../img/${prod_img}`).then((image) => setImg(image.default))
+    // const [img, setImg] =useState(``)
+    // import (`..img/${prod_img}`).then((image) => setImg(image.default))
     return (
                 <article className="product">
                 <header>
                     <div className="product-list">
-                        <a href="product.html"><img src={`./img/${prod_img}`} alt={prod_name} /></a>
+                        <a href="product.html">{
+                            <Image src= {prod_img} alt={prod_name} className = "img-class"/>
+                        }</a>
                     </div>
                     <h3>{prod_name}</h3>
                     <data value="39"><del>{old_price}</del> <ins>{prod_price}</ins></data>

@@ -17,7 +17,10 @@ module.exports = {
 			},{
 				test: /\.(png|svg|jpg|jpeg|gif)$/,
 				use: ['file-loader']
-			}
+			},{
+				test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+				use: ['file-loader']
+			  }
 		]
 	},
 	plugins: [
@@ -38,6 +41,8 @@ module.exports = {
 	resolve: {
 		alias: {
 			components: path.resolve(__dirname, 'src/components/'),
+			pages: path.resolve(__dirname, 'src/pages/'),
+			contexts: path.resolve(__dirname, 'src/contexts/'),
 			css: path.resolve(__dirname, 'src/css/'),
 			img: path.resolve(__dirname, 'src/img/'),
 		}

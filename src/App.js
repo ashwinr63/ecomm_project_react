@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from './pages/Product';
+import Product from 'pages/Product';
 
 const App = () => {
 	const products = [
@@ -160,7 +160,8 @@ const App = () => {
 			"prod_name": "Prod15",
 			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
-			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
+			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
+			"old_price": 50,
 			"prod_price": 22,
 			"prod_rate": 4,
 			"prod_type": ["Diesel", "Gas", "Electric"],
@@ -170,7 +171,8 @@ const App = () => {
 			"prod_name": "Prod16",
 			"prod_img": "Toyota_Camry.jpg",
 			"prod_link": "product.html",
-			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
+			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
+			"old_price": 50,
 			"prod_price": 1025,
 			"prod_rate": 4,
 			"prod_type": ["Diesel","Gas", "Electric"],
@@ -180,7 +182,8 @@ const App = () => {
 			"prod_name": "Prod17",
 			"prod_img": "Toyota_Rav.jpg",
 			"prod_link": "product.html",
-			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
+			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
+			"old_price": 50,
 			"prod_price": 20,
 			"prod_rate": 4,
 			"prod_type": ["Diesel", "Gas", "Electric"],
@@ -190,7 +193,8 @@ const App = () => {
 			"prod_name": "Prod18",
 			"prod_img": "Toyota_Acura.jpg",
 			"prod_link": "product.html",
-			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
+			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
+			"old_price": 50,
 			"prod_price": 29,
 			"prod_rate": 4,
 			"prod_type": ["Diesel","Gas", "Electric"],
@@ -200,7 +204,8 @@ const App = () => {
 			"prod_name": "Prod19",
 			"prod_img": "Toyota_Rav.jpg",
 			"prod_link": "product.html",
-			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
+			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
+			"old_price": 50,
 			"prod_price": 20,
 			"prod_rate": 4,
 			"prod_type": ["Diesel", "Gas", "Electric"],
@@ -210,7 +215,8 @@ const App = () => {
 			"prod_name": "Prod20",
 			"prod_img": "Toyota_Acura.jpg",
 			"prod_link": "product.html",
-			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart","old_price": 50,
+			"prod_desc": "Here is a shot of this product that might entice a user to click and add it to their cart",
+			"old_price": 50,
 			"prod_price": 29,
 			"prod_rate": 4,
 			"prod_type": ["Diesel","Gas", "Electric"],
