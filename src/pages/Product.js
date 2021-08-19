@@ -23,7 +23,9 @@ const Product = ({data}) => {
 
     const searchResult = data
     .filter(({prod_price}) => prod_price >= minPrice)
-    .filter(({prod_name}) => prod_name.toUpperCase().includes(query.toUpperCase())).sort(sort)
+    .filter(({prod_name}) => prod_name.toUpperCase().includes(query.toUpperCase()))
+    .filter(({prod_name}) => methods.length === 0 || prod_name.filter((method)=> methods.includes(method)).length > 0)
+    .sort(sort)
 
     const handleQuery = (event) => {
         //setQuery(event.target.value)
@@ -49,11 +51,25 @@ const Product = ({data}) => {
               sort: sorting
             })
           }
-      
+          const handleMethod = ({target}) => {
+            // When a check or uncheck a checkbox, add/remove the "value" from the Array
+        
+            if (target.checked) {
+              setSearchState({
+                ...searchState,
+                methods: [...searchState.methods, target.value]
+              })
+            } else {
+              setSearchState({
+                ...searchState,
+                methods: searchState.methods.filter((method) => method !== target.value)
+              })
+            }
+          }
 
     return (
         <Layout>
-
+        <form className="filters">
           <h2>Filters</h2>
           <fieldset className="search">
             <input type="search" name="search" id="filterResults" autoComplete="off" onChange={handleQuery} value={query}/>
@@ -74,7 +90,7 @@ const Product = ({data}) => {
             <Image src={filterlogo}/>
             </button>
 
-            <fieldset className="color">
+            <fieldset className="color" onChange={handleMethod}>
               <legend>Colour</legend>
               <ul className="filter-list">
                 <li><input type="checkbox" name="colour" value="black" id="black"/> <label htmlFor="black">Black</label></li>
@@ -123,6 +139,7 @@ const Product = ({data}) => {
               </li>
             </ol>
           </fieldset>
+          </form>
         <SearchFor result={searchResult} />
         </Layout>
     )

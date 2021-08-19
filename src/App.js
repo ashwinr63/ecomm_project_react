@@ -1,7 +1,13 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Product from 'pages/Product';
+import ProdContext from 'contexts/ProdContext';
+import cartContext from 'contexts/cartContext';
+import { SingleProductPage } from 'pages/SingleProductPage';
+
 
 const App = () => {
+	
 	const products = [
 		{
 			"prod_name": "Prod1",
@@ -224,8 +230,50 @@ const App = () => {
 		}
 	]
 
+	const userData = {
+		username: "ashwinr63"
+	}
+	const updateUserName = (name) => {
+		userData.updateUser = name;
+	}
+	const [cart, setCart] = useState([])
+
+	const addCart = (ProdSearch) => {
+	const cartPage = products.find((product) => product.prod_name === ProdSearch)
+	return(
+		setCart([...cart, cartPage])
+		)
+	}
+	// to delete the cart page 
+	const deleteCart = () => {
+	const delCart = cart.filter((product)=> product.prod_name !== product.prod_name)
 	return (
-	<Product data = {products}/>
+		setCart(delCart)
+	)
+	}
+	// Product Page
+	const viewProduct =() => {
+		const SingleProductPage = products.filter((product) => product.prod_name === product.prod_name)
+		return (
+			SingleProductPage
+		)
+	}
+
+
+
+	return (
+		<Router>
+			<ProdContext.Provider value= {{data:products, data:userData, updateUser:updateUserName, viewProduct:viewProduct, cart:cart, addCart:addCart, deleteCart:deleteCart}}>
+			<Switch>
+				<Route exact path="/"><Product data = {products}/></Route>
+				<Route exact path="/SingleProduct/:slug"><SingleProduct/></Route>
+				<Route exact path="/cartPage"><CartPage /></Route>
+				<Route exact path="/FavPage"><Favpage/></Route>
+			</Switch>
+
+			</ProdContext.Provider>
+		</Router>
+	
 	)
 }
 

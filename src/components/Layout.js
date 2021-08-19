@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import Filter from 'components/Filter'
-import FilterListIcon from '@material-ui/icons/FilterList';
 
 const Layout = ({ children }) => {
 
