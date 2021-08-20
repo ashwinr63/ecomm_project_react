@@ -4,8 +4,7 @@ import Product from 'pages/Product';
 import SingleProductPage from 'pages/SingleProductPage';
 import ProdContext from 'contexts/ProdContext';
 import cartContext from 'contexts/cartContext';
-import cartPage from 'pages/cartPage'
-import CartPage from './pages/cartPage';
+import CartPage from 'pages/cartPage';
 
 
 const App = () => {
@@ -232,12 +231,12 @@ const App = () => {
 		}
 	]
 
-	const userData = {
-		username: "ashwinr63"
-	}
-	const updateUserName = (name) => {
-		userData.updateUser = name;
-	}
+	// const userData = {
+	// 	username: "ashwinr63"
+	// }
+	// const updateUserName = (name) => {
+	// 	userData.updateUser = name;
+	// }
 
 	const [cart, setCart] = useState([])
 
@@ -265,11 +264,11 @@ const App = () => {
 
 	return (
 		<Router>
-			<ProdContext.Provider value= {{data:products, data:userData, updateUser:updateUserName, viewProduct:viewProduct, cart:cart, addCart:addCart, deleteCart:deleteCart}}>
+			<ProdContext.Provider value= {{data:products, viewProduct:viewProduct, cart:cart, addCart:addCart, deleteCart:deleteCart}}>
 			<Switch>
 				<Route exact path="/"><Product data = {products}/></Route>
 				<Route exact path="/SingleProductPage/:slug"><SingleProductPage/></Route>
-				<Route exact path="/cartPage"><CartPage /></Route>
+				<Route exact path="/CartPage"><CartPage /></Route>
 			</Switch>
 
 			</ProdContext.Provider>

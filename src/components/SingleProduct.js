@@ -7,8 +7,8 @@ import SecondImg from 'img/010721.jpg'
 const SingleProduct = ({data}) => {
     const {prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color} = data
 
-    const cartProd = useContext(ProdContext)
-    const addCart = cartProd.addCart
+    const cartProd1 = useContext(ProdContext)
+    const addCart = cartProd1.addCart
 
     return (
         <div>

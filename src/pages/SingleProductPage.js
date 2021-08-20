@@ -1,17 +1,18 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import {useParams} from 'react-router-dom'
-import Layout from 'components/Layout'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
-import SingleProduct from 'components/SingleProduct'
 import ProdContext from 'contexts/ProdContext'
+import SingleProduct from 'components/SingleProduct'
+import '../css/index.css'
+import '../css/style.css'
 
 const SingleProductPage = () => {
 
         //Creating single product.
         const {slug} = useParams()
-        const SingleProduct = useContext(ProdContext)
-        const SingleProductPage = SingleProduct.viewProduct(slug)
+        const SingleProduct1 = useContext(ProdContext)
+        const SingleProductPage = SingleProduct1.viewProduct(slug)
         
         //updating single product
         const prods = SingleProductPage.find((product) => product.prod_name === slug)
@@ -19,9 +20,12 @@ const SingleProductPage = () => {
         return (
                 <>
                 <Header />
-                <SingleProduct data={prods} />
+
+                <SingleProduct data={prods}/>
+
                 <Footer/>
                 </>
+
         )
 }
 

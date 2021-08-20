@@ -1,5 +1,4 @@
-import React, {useContext, useState} from 'react'
-import {useParams} from 'react-router-dom'
+import React, {useContext} from 'react'
 import Image from 'components/Image'
 import ProdContext from 'contexts/ProdContext'
 import Header from 'components/Header'
@@ -14,6 +13,7 @@ const Cart = ({data}) => {
 
     return (
         <>
+        <Header/>
         <section className="cart-container">
         <div className="inside-cart">
         <Image src={prod_img} alt={prod_name}/>
@@ -27,6 +27,7 @@ const Cart = ({data}) => {
         <button type="button" className="btn-cart" onClick={() => delCart(data.prod_img)}>Delete</button>
         </div>
         </section>
+        <Footer/>
         </>
     )
 }

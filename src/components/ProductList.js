@@ -11,13 +11,11 @@ const ProductList = ({data}) => {
                 <article className="product">
                 <header>
                     <div className="product-list">
-                        <a href="product.html">{
-                            <Image src= {prod_img} alt={prod_name} className = "img-class"/>
-                        }</a>
+                        <Link to={`/SingleProductPage/${prod_name}`}><Image src= {prod_img} alt={prod_name} className = "img-class"/></Link>
                     </div>
                     <h3>{prod_name}</h3>
                     <data value="39"><del>{old_price}</del> <ins>{prod_price}</ins></data>
-                    <p>{prod_desc}<a href={prod_link}>see more</a></p>
+                    <p>{prod_desc}<Link to={`/SingleProductPage/${prod_name}`}></Link></p>
                 <dl>
                 <dt>Rating</dt>
                 <dd>{prod_rate}</dd>

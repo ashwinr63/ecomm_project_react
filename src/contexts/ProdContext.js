@@ -1,5 +1,5 @@
 import {createContext} from 'react'
 
-const ProdContext = createContext(null)
+const ProdContext = createContext()
 
 export default ProdContext

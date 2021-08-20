@@ -50,21 +50,6 @@ const Product = ({data}) => {
               sort: sorting
             })
           }
-          // const handleMethod = ({target}) => {
-          //   // When a check or uncheck a checkbox, add/remove the "value" from the Array
-        
-          //   if (target.checked) {
-          //     setSearchState({
-          //       ...searchState,
-          //       methods: [...searchState.methods, target.value]
-          //     })
-          //   } else {
-          //     setSearchState({
-          //       ...searchState,
-          //       methods: searchState.methods.filter((method) => method !== target.value)
-          //     })
-          //   }
-          // }
 
     return (
         <Layout>

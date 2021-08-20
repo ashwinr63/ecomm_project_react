@@ -1,0 +1,101 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+html {
+	box-sizing: border-box;
+}
+body {
+	box-sizing: border-box;
+	--global-primary-col: #FBFBF2;    /* main colour */
+	--global-primary-alt: #E5E6E4;    /* variant */
+	--primary-col: #cfd2cd9f;
+    --primary-alt: #a6a2a2;   /* for text or icons */
+	--secondary-col: #473d3f;
+	--secondary-alt: #e9cfc0a1;
+	--secondary-on: #363636;
+    --btn-color: #75694e;
+	/* etc, etc... */
+    --pad-and-gap: 1em;
+    font-family: Titillium, sans-serif;
+    border: 0;
+    margin: 0;
+	color: var(--secondary-on);
+	margin: 0;
+}
+
+
+/* Preview each of these suggested resets before beginning your project styling */
+
+img, object {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+ul, ol, dl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li > ul, li > ol {
+	padding-left: 2.5em;
+}
+
+input, button {
+	margin: 0;
+	font: inherit;
+}
+
+fieldset {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+legend {
+	padding: 0;
+	border: none;
+}
+
+
+/* These will make "User agent stylesheet" values (Chrome) available when needed, using classes */
+ul.ul {
+	list-style-type: disc;
+}
+ol.ol {
+	list-style-type: decimal;
+}
+ul.ul, ol.ol {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 2.5em;
+}
+fieldset.fieldset {
+	display: block;
+	margin-inline-start: 0.125em;
+	margin-inline-end: 0.125em;
+	padding-block-start: 0.35em;
+	padding-inline-start: 0.75em;
+	padding-inline-end: 0.75em;
+	padding-block-end: 0.625em;
+	min-inline-size: min-content;
+	border-width: 0.125em;
+	border-style: groove;
+	border-color: threedface;
+	border-image: initial;
+}
+legend.legend {
+	display: block;
+	padding-inline-start: 0.125em;
+	padding-inline-end: 0.125em;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+}
