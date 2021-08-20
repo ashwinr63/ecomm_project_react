@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Product from 'pages/Product';
 import SingleProductPage from 'pages/SingleProductPage';
@@ -6,6 +6,7 @@ import ProdContext from 'contexts/ProdContext';
 import cartContext from 'contexts/cartContext';
 import CartPage from 'pages/cartPage'
 import FavPage from 'pages/FavPage'
+import Page404 from 'pages/Page404';
 
 
 const App = () => {
@@ -271,8 +272,8 @@ const App = () => {
 				<Route exact path="/SingleProductPage/:slug"><SingleProductPage /></Route>
 				<Route exact path="/CartPage"><CartPage /></Route>
 				<Route exact path="/FavPage"><FavPage /></Route>
+				<Route exact path="*"><Page404/></Route>
 			</Switch>
-
 			</ProdContext.Provider>
 		</Router>
 	
