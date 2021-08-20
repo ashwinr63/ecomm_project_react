@@ -4,13 +4,14 @@ import Layout from 'components/Layout'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import ProdContext from 'contexts/ProdContext'
+import SingleProduct from 'components/SingleProduct'
 
 const SingleProductPage = () => {
 
         //Creating single product.
         const {slug} = useParams()
-        const SingleProduct = useContext(ProdContext)
-        const SingleProductPage = SingleProduct.viewProduct(slug)
+        const SingleProd = useContext(ProdContext)
+        const SingleProductPage = SingleProd.viewProduct(slug)
         
         //updating single product
         const product = SingleProductPage.find((product) => product.prod_name === slug)

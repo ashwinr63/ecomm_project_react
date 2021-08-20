@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../img/Logo.png'
 import Image from 'components/Image'
+import MenuImg from '../img/menu_black_24dp.svg'
 import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -17,7 +18,7 @@ const Header = () => {
       {/* <!-- Navigation menu and toggle button (non-functional) --> */}
      
         <button type="button" className="nav-toggle active">
-          <img src={"./img/menu_black_24dp.svg"} alt="menu-bar"/></button>
+          <img src={MenuImg} alt="menu-bar"/></button>
       {/* <!-- Navigation Menu --> */}
       <nav aria-label="Primary" className="navigation">
         <ul className="menu">

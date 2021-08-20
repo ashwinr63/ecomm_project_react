@@ -4,7 +4,6 @@ import Image from 'components/Image'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SecondImg from 'img/010721.jpg'
 import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
-
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 

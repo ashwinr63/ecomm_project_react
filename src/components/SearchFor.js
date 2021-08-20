@@ -13,8 +13,9 @@ const SearchFor = ({result}) => {
 
     return (
         <>
+        
         <section className="results">
-        <h2 className="subheading">Results</h2>
+        <h2 className="heading">Results</h2>
             {ProductArray}
             <nav aria-label="Pagination" className="pagination">
             <p id="pageNumber">
