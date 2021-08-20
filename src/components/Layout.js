@@ -9,9 +9,8 @@ const Layout = ({ children }) => {
         <Header />
         {/* Main Product Content */}
         <main className="products">
-          <section className="results">
           {children}
-          </section>
+
         </main>
 
         <Footer />

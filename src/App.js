@@ -4,7 +4,8 @@ import Product from 'pages/Product';
 import SingleProductPage from 'pages/SingleProductPage';
 import ProdContext from 'contexts/ProdContext';
 import cartContext from 'contexts/cartContext';
-import CartPage from 'pages/cartPage';
+import CartPage from 'pages/cartPage'
+import FavPage from 'pages/FavPage'
 
 
 const App = () => {
@@ -267,8 +268,9 @@ const App = () => {
 			<ProdContext.Provider value= {{data:products, viewProduct:viewProduct, cart:cart, addCart:addCart, deleteCart:deleteCart}}>
 			<Switch>
 				<Route exact path="/"><Product data = {products}/></Route>
-				<Route exact path="/SingleProductPage/:slug"><SingleProductPage/></Route>
+				<Route exact path="/SingleProductPage/:slug"><SingleProductPage /></Route>
 				<Route exact path="/CartPage"><CartPage /></Route>
+				<Route exact path="/FavPage"><FavPage /></Route>
 			</Switch>
 
 			</ProdContext.Provider>

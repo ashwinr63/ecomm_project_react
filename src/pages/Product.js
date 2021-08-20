@@ -3,6 +3,8 @@ import Layout from 'components/Layout'
 import SearchFor from 'components/SearchFor'
 import filterlogo from '../img/filter_list_black_24dp.svg'
 import Image from 'components/Image'
+import StarIcon from '@material-ui/icons/Star';
+import StarHalfIcon from '@material-ui/icons/StarHalf';
 
 const Product = ({data}) => {
 
@@ -100,25 +102,25 @@ const Product = ({data}) => {
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour"/>
                 <label htmlFor="aboveFour">
-                  <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_border</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="3" id="aboveThree"/>
                 <label htmlFor="aboveThree">
-                  <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_border</span><span className="material-icons">star_border</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="2" id="aboveTwo"/>
                 <label htmlFor="aboveTwo">
-                  <span className="material-icons">star</span><span className="material-icons">star</span><span className="material-icons">star_border</span><span className="material-icons">star_border</span><span className="material-icons">star_border</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="1" id="aboveOne"/>
                 <label htmlFor="aboveOne">
-                  <span className="material-icons">star</span><span className="material-icons">star_border</span><span className="material-icons">star_border</span><span className="material-icons">star_border</span><span className="material-icons">star_border</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span>
                 </label>
               </li>
             </ol>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import pImg from 'img/Logo.png'
+
 const Image = ({src, alt, ...attr}) => {
 
   // State will hold the image url
@@ -12,7 +12,7 @@ const Image = ({src, alt, ...attr}) => {
   }
 
   return (
-    <img src={(img) ? img : pImg} alt={alt} {...attr} />
+    <img src={img} alt={alt} {...attr} />
   )
 }
 

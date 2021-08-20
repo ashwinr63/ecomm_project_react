@@ -1,6 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import logo from '../img/Logo.png'
 import Image from 'components/Image'
+import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
+import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const Header = () => {
     return (
@@ -38,9 +42,9 @@ const Header = () => {
       </form>
         {/* <!-- Additional links --> */}
         <ul className="your-products">
-          <li><a href="#"><span className="material-icons" aria-label="Favourites" id='favourites'>favorite_border</span></a></li>
-        <li><a href="#"><span className="material-icons" aria-label="Items in cart" id='items'>shopping_cart</span></a></li>
-        <li><a href="#"><span className="material-icons" aria-label="user account" id="account">account_circle</span></a></li>
+        <li><Link to='/FavPage'><span><FavoriteRoundedIcon /></span></Link></li>
+        <li><Link to='/CartPage'><span><ShoppingCartRoundedIcon /></span></Link></li>
+        <li><Link to='/AccountPage'><span><AccountCircleIcon /></span></Link></li>
         </ul>
         </header>
       </>

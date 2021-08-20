@@ -13,9 +13,19 @@ const Favourite = ({data}) => {
 
     // render 
     return (
-        <div className="fav-product">
-            
+        <>
+        <Header/>
+        <div className="fav-container">
+            <Image src={prod_img} alt={prod_name}/>
         </div>
+        <div className="fav-details">
+            <h3>{prod_name}</h3>
+            <h3>{prod_desc}</h3>
+            <h3>{prod_price}</h3>
+        </div>
+        <button className="fav" type="button" onClick={delCart}>Remove This!</button>
+        <Footer/>
+        </>
     )
 
 }
