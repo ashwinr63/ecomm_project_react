@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../img/Logo.png'
 import Image from 'components/Image'
 import MenuImg from '../img/menu_black_24dp.svg'
+import searchImg from '../img/search_black_24dp.svg'
 import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -39,7 +40,7 @@ const Header = () => {
         <label>
           <input type="search" name="find" id="find" placeholder="Find"/>
         </label>
-        <button type="button" img src={"./img/search_black_24dp.svg"} alt="search-outline" />
+        <button type="button" img src={searchImg} alt="search-outline" />
       </form>
         {/* <!-- Additional links --> */}
         <ul className="your-products">
