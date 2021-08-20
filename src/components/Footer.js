@@ -1,13 +1,16 @@
 import React from 'react'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Footer = () => {
     return (
         <footer className="page-footer">
         <div>
         <ul className="social">
-        <li><a href="#"><span className="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span className="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span className="material-icons">alternate_email</span> Twitter</a></li>
+        <li><span className="material-icons"><FacebookIcon/></span> Facebook</li>
+        <li><span className="material-icons"><InstagramIcon/></span> Instagram</li>
+        <li><span className="material-icons"><TwitterIcon/></span> Twitter</li>
         </ul>
          <nav aria-label="Legal" className="foot-nav">
         <ul className="legal">

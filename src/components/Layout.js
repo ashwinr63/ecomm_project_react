@@ -5,7 +5,7 @@ import Footer from 'components/Footer'
 const Layout = ({ children }) => {
 
     return (
-      <div className="layout">
+      <>
         <Header />
         {/* Main Product Content */}
         <main className="products">
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         </main>
 
         <Footer />
-      </div>
+      </>
     );
 }
 

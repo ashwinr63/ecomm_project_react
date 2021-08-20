@@ -89,9 +89,9 @@ const Product = ({data}) => {
             <fieldset className="types">
               <legend>Types</legend>
               <ol className="filter-list">
-                <li><input type="checkbox" name="size" value="xs" id="xs"/> <label htmlFor="xs">Gas</label></li>
+                <li><input type="checkbox" name="size" value="xs" id="xs"/> 
+                <label htmlFor="xs">Gas</label></li>
                 <li><input type="checkbox" name="size" value="sm" id="sm"/> <label htmlFor="sm">Diesel</label></li>
-                <li><input type="checkbox" name="size" value="md" id="md"/> <label htmlFor="md">Hydrogen</label></li>
                 <li><input type="checkbox" name="size" value="lg" id="lg"/> <label htmlFor="lg">Hybrid</label></li>
                 <li><input type="checkbox" name="size" value="xl" id="xl"/> <label htmlFor="xl">Electric</label></li>
               </ol>
@@ -102,25 +102,25 @@ const Product = ({data}) => {
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour"/>
                 <label htmlFor="aboveFour">
-                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarHalfIcon/></span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="3" id="aboveThree"/>
                 <label htmlFor="aboveThree">
-                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarHalfIcon/></span><span className="material-icons"><StarHalfIcon/></span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="2" id="aboveTwo"/>
                 <label htmlFor="aboveTwo">
-                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarIcon/></span><span className="material-icons"><StarHalfIcon/></span><span className="material-icons"><StarHalfIcon/></span><span className="material-icons"><StarHalfIcon/></span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="1" id="aboveOne"/>
                 <label htmlFor="aboveOne">
-                  <span className="material-icons"><StarIcon/></span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span><span className="material-icons">StarHalfIcon</span>
+                  <span className="material-icons"><StarIcon/></span><span className="material-icons"><StarHalfIcon/></span><span className="material-icons"><StarHalfIcon/></span><span className="material-icons"><StarHalfIcon/></span><span className="material-icons"><StarHalfIcon/></span>
                 </label>
               </li>
             </ol>

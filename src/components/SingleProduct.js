@@ -26,11 +26,11 @@ const SingleProduct = ({ data }) => {
         </div>
       </div>
       <div classname="product-data">
-        <h3>Honda Civic</h3>
+        <h3>{prod_Name}</h3>
         <data value="20k"><del>{old_price}</del> <ins>{prod_price}</ins></data>
         <dl className="prod-rating">
           <dt>{prod_rate}</dt>
-          <dd>4.4 <span><StarIcon /></span><span><StarIcon /></span><span ><StarIcon /></span><span ><StarIcon /></span><span><StarHalfIcon /></span></dd>
+          <dd>{prod_rate} <span><StarIcon /></span><span><StarIcon /></span><span ><StarIcon /></span><span ><StarIcon /></span><span><StarHalfIcon /></span></dd>
         </dl>
         <button type="button" className="add-cart" onClick={() => addToCart(prod_name)}>
           <span >
