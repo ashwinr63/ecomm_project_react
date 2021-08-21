@@ -15,7 +15,7 @@ const ProductList = ({data}) => {
                 <article className="product">
                 <header>
                     <div className="product-list">
-                        <Link to={`/SingleProductPage/${prod_name}`}><Image src={prod_img} alt={prod_name} className = "img-class"/></Link>
+                        <Link to={`/SingleProductPage/${prod_name}`}><Image src={prod_img} alt={prod_name} className="img-class"/></Link>
                     </div>
                     <h3>{prod_name}</h3>
                     <data value="39"><del>{old_price}</del> <ins>{prod_price}</ins></data>

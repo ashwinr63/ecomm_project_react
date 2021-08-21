@@ -310,7 +310,9 @@ body{
     }
 
     .img-class {
-        border-radius: 0.5rem;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
     }
     .product:hover {
         border: 1px solid black;
@@ -410,6 +412,7 @@ body{
         color: rgba(0, 0, 100, 1.5);
         box-shadow: drop-shadow(30px 10px 4px);
     }
+
     /* Product content */
     
     .filters {
@@ -429,12 +432,11 @@ body{
         gap: 0.4rem;
         padding: 0 0.8em;
     }
-    .results > .pagination {
+    .pagination {
         display: flex;
         flex-direction: row;
     }
     .pages {
         display: flex;
-        gap: 1rem;
     }
 }

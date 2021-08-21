@@ -98,3 +98,7 @@ legend.legend {
 	border-color: initial;
 	border-image: initial;
 }
+
+a.img{
+	width: 100%;
+}
