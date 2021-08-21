@@ -180,7 +180,7 @@ body{
      }
      .pages {
          display: flex;
-         gap: 2em;
+         gap: 1rem;
      }
     /* ==========footer========= */  
      .page-footer {
@@ -428,5 +428,13 @@ body{
         grid-template-rows: auto;
         gap: 0.4rem;
         padding: 0 0.8em;
+    }
+    .results > .pagination {
+        display: flex;
+        flex-direction: row;
+    }
+    .pages {
+        display: flex;
+        gap: 1rem;
     }
 }

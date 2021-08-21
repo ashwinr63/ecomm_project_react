@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import ProductList from 'components/ProductList'
+import { Pagination } from 'antd'
 
 const SearchFor = ({result}) => {
 
@@ -9,26 +10,23 @@ const SearchFor = ({result}) => {
     const endRow = startRow + pageSize
     const totalPages = Math.ceil(result.length / pageSize)
 
-    const ProductArray = result.slice(0,20).map((products) => <ProductList key={products.prod_name} data={products} />)
+    const ProductArray = result.slice(startRow,endRow).map((products) => <ProductList key={products.prod_name} data={products} />)
 
     return (
         <>
         
         <section className="results">
         <h2 className="heading">Results</h2>
+        <div className="product-list">
             {ProductArray}
-            <nav aria-label="Pagination" className="pagination">
+        </div>
+           
+        <nav aria-label="Pagination" className="pagination">
             <p id="pageNumber">
-                {/* {ProductArray.length}{(ProductArray.length === 1) ? `Product` : `products`} of {results.length} */}
                 {ProductArray.length} {(ProductArray.length === 1) ? `product` : `products`} of {result.length}
             </p>
-        <ol className="pages">
-          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-          <li><a href="#" aria-label="Page 4">4</a></li>
-          <li><a href="#" aria-label="Page 5">5</a></li>
-        </ol>
+            <p className="pages"><Pagination defaultCurrent={currPage} total={result.length} defaultPageSize={pageSize} onChange={(page) => setCurrPage(page)}></Pagination>
+        </p>
         </nav>
         </section>
         </>

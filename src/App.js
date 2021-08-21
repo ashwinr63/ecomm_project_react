@@ -233,13 +233,6 @@ const App = () => {
 		}
 	]
 
-	// const userData = {
-	// 	username: "ashwinr63"
-	// }
-	// const updateUserName = (name) => {
-	// 	userData.updateUser = name;
-	// }
-
 	const [cart, setCart] = useState([])
 
 	const addCart = (ProdSearch) => {
@@ -272,7 +265,7 @@ const App = () => {
 				<Route exact path="/SingleProductPage/:slug"><SingleProductPage /></Route>
 				<Route exact path="/CartPage"><CartPage /></Route>
 				<Route exact path="/FavPage"><FavPage /></Route>
-				<Route exact path="*"><Page404/></Route>
+				<Route exact path="*"><Page404 /></Route>
 			</Switch>
 			</ProdContext.Provider>
 		</Router>
