@@ -25,7 +25,7 @@ const SingleProduct = ({ data }) => {
         </div>
       </div>
       <div classname="product-data">
-        <h3>{prod_Name}</h3>
+        <h3>{prod_name}</h3>
         <data value="20k"><del>{old_price}</del> <ins>{prod_price}</ins></data>
         <dl className="prod-rating">
           <dt>{prod_rate}</dt>
