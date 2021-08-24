@@ -10,7 +10,7 @@ const SearchFor = ({result}) => {
     const endRow = startRow + pageSize
     const totalPages = Math.ceil(result.length / pageSize)
 
-    const ProductArray = result.slice(startRow,endRow).map((products) => <ProductList key={products.prod_name} data={products} />)
+    const ProductArray = result.slice(startRow,endRow).map((products) => <ProductList key={products.prod_id} data={products} />)
 
     return (
         <>
@@ -20,7 +20,7 @@ const SearchFor = ({result}) => {
         <div className="product-list">
             {ProductArray}
         </div>
-           
+        </section>
         <nav aria-label="Pagination" className="pagination">
             <p id="pageNumber">
                 {ProductArray.length} {(ProductArray.length === 1) ? `product` : `products`} of {result.length}
@@ -28,7 +28,7 @@ const SearchFor = ({result}) => {
             <p className="pages"><Pagination defaultCurrent={currPage} total={result.length} defaultPageSize={pageSize} onChange={(page) => setCurrPage(page)}></Pagination>
         </p>
         </nav>
-        </section>
+        
         </>
     )
 }

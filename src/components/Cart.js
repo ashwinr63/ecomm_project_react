@@ -6,13 +6,11 @@ import Footer from 'components/Footer'
 
 
 const Cart = ({data}) => {
-    const {prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color} = data
-
-    const delProd = useContext(ProdContext)
-    const delCart = delProd.deleteCart
+    
+    const {prod_id, prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color} = data  
 
     return (
-        <>
+        <ProdContext.Provider value= {{data:products, viewProduct:viewProduct, cart:cart, addToCart:addToCart }}>
         <Header/>
         <section className="cart-container">
         <div className="inside-cart">
@@ -24,11 +22,11 @@ const Cart = ({data}) => {
         <data><del>{old_price}</del> <ins>{prod_price}</ins></data>
         </div>
         <div className="number-in-cart">
-        <button type="button" className="btn-cart" onClick={() => delCart(data.prod_img)}>Delete</button>
+        <button type="button" className="btn-cart" onClick={() => addToCart(data.prod_id)}>Delete</button>
         </div>
         </section>
         <Footer/>
-        </>
+        </ProdContext.Provider>
     )
 }
 

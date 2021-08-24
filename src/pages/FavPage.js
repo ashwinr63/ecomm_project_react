@@ -10,7 +10,7 @@ const FavPage = () => {
     let cartProd = useContext(ProdContext)
     let CartPage = cartProd.cart
 
-    let cartUpdate = CartPage.map((product) => <Cart key={product.prod_name} data={product}/>)
+    let cartUpdate = CartPage.map((product) => <Cart key={product.prod_id} data={product}/>)
 
 
     return (

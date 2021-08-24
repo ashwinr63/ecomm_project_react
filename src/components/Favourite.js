@@ -18,7 +18,7 @@ const Favourite = ({data}) => {
         <div className="fav-container">
             <Image src={prod_img} alt={prod_name}/>
         </div>
-        <div className="fav-details">
+        <div className="fav-details" >
             <h3>{prod_name}</h3>
             <h3>{prod_desc}</h3>
             <h3>{prod_price}</h3>

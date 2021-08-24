@@ -6,10 +6,10 @@ import SecondImg from 'img/010721.jpg'
 import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
-
+import SearchFor from 'components/SearchFor'
 
 const SingleProduct = ({ data }) => {
-  const { prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color } = data
+  const {prod_id, prod_name, prod_img, old_price, prod_price, prod_desc, prod_link, prod_rate, prod_type, prod_color } = data
 
   const cartProd = useContext(ProdContext)
   const addToCart = cartProd.addToCart
@@ -28,10 +28,11 @@ const SingleProduct = ({ data }) => {
         <h3>{prod_name}</h3>
         <data value="20k"><del>{old_price}</del> <ins>{prod_price}</ins></data>
         <dl className="prod-rating">
-          <dt>{prod_rate}</dt>
-          <dd>{prod_rate} <span><StarIcon /></span><span><StarIcon /></span><span ><StarIcon /></span><span ><StarIcon /></span><span><StarHalfIcon /></span></dd>
+          <dt>4
+          <span><StarIcon /></span><span><StarIcon /></span><span ><StarIcon /></span><span ><StarIcon /></span><span><StarHalfIcon /></span>
+          </dt>
         </dl>
-        <button type="button" className="add-cart" onClick={() => addToCart(prod_name)}>
+        <button type="button" className="add-cart" onClick={() => addToCart(prod_id)}>
           <span >
             <ShoppingCartIcon /></span>
         </button>

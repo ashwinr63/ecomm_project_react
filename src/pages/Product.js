@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Layout from 'components/Layout'
 import SearchFor from 'components/SearchFor'
-import filterlogo from '../img/filter_list_black_24dp.svg'
+import filterlogo from '../img/filter_list.svg'
 import Image from 'components/Image'
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';

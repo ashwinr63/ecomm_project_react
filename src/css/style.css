@@ -218,9 +218,9 @@ body{
         display: none;
     }
 
-    .search input[type="search"]{
+    /* .search input[type="search"]{
         display: none;
-    }
+    } */
 
     #favourites, #account {
         display: none;
@@ -238,14 +238,8 @@ body{
         border: none;
         /* float: right; */
     }
-    .search button {
-        background-color: transparent;
-        outline: none;
-        border: none;
-        justify-self: flex-end;
-    }
-    .your-products{
-        justify-self: flex-end;
+    .page-header .your-products {
+        display: flex;
     }
     
     /* main products */
@@ -275,17 +269,49 @@ body{
         /* background-color: aquamarine; */
     }
 
+    fieldset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    fieldset.search input[type="search"]{
+        margin-bottom: 1em;
+    }
+    fieldset.select select[id=sort] {
+        margin-bottom: 2em;
+        padding: 1em;
+    }
+
+    fieldset.slider {
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
     .filter-button{
         align-self: center;
         height: 2rem;
         width: 3rem;
+        margin-bottom: 3rem;
     }
 
+    fieldset.color {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        margin: 1rem;
+    }
     .filter-options {
-        display: none;  
+        display: flex;  
     }
     
+    .color ul {
+        display: flex;
+    }
+
     .filter-list {
+        margin: 1rem;
+        display: flex;
         gap: 0.5rem;
     }
     .sort {

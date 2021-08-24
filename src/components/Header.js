@@ -36,12 +36,12 @@ const Header = () => {
       </nav>
       <div className="search-product"/>
       {/* <!-- Search htmlFor a product (non-functional) --> */}
-      <form className="search">
+      {/* <form className="search">
         <label>
           <input type="search" name="find" id="find" placeholder="Find"/>
         </label>
         <button type="button" img src={searchImg} alt="search-outline" />
-      </form>
+      </form> */}
         {/* <!-- Additional links --> */}
         <ul className="your-products">
         <li><Link to='/FavPage'><span><FavoriteRoundedIcon /></span></Link></li>
